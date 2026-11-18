@@ -24,6 +24,10 @@ mod prover;
 mod transport;
 mod wallet;
 
+#[cfg(test)]
+#[path = "../../../../../fixtures/trees.rs"]
+mod fixture_trees;
+
 pub use activity::{
     ActivityEntry, ActivityKind, TransactionLookup, TransactionLookupStatus, TransactionOutput,
 };
@@ -150,7 +154,7 @@ impl LocalProver {
             return Err(WalletError::ProverBusy);
         }
         let id = state.next_id()?;
-        let prover = prover::load_key(std::path::Path::new(&key_path))?;
+        let prover = prover::load_file(std::path::Path::new(&key_path))?;
         state.loaded = Some(Loaded {
             id,
             key: None,
