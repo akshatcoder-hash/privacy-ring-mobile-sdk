@@ -10,7 +10,7 @@ device. The Solana key stays with the application's signer.
 Targets the finalized ceremony keys and signed-policy protocol in
 [Zolana #521](https://github.com/helius-labs/zolana/pull/521).
 
-Pins Zolana commit `ccb395d4b88d8542088a30f47a5d0d7158c3e3b7` with typed local proof inputs based on
+Pins Zolana commit `1e2ab196252dd81fdfd7e315ee3cff51ccb5201d` with typed local proof inputs based on
 the existing protocol deployment and shielded-pool program
 `ring1GaLCuJnkUMVkX2JeZLTTX17wKsV4fZmPVzXANW`. Applications supply indexer and
 remote prover URLs with a reviewed TEE policy.
@@ -105,7 +105,7 @@ The Flutter-facing crate pins `mopro-ffi` to `sergeytimoshin/mopro` revision
 `c1071f96fa5a28dca8e567dd3944331047450a2b`. Local wallet proving passes the
 SPR client's assembled transfer and merge inputs to `zopro-spr`. The wallet
 chooses and verifies its pinned key artifact, and `zopro-prover` caches its
-mapped solver image and GPU pipelines. The file-based and fixture APIs
+solver image and GPU pipelines. It maps a private snapshot of the image. The file-based and fixture APIs
 accept the existing JSON format.
 
 Release pins for SPR protocol crates use a single Zolana main revision. This

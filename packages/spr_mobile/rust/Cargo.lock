@@ -5478,7 +5478,7 @@ dependencies = [
 [[package]]
 name = "spr-api"
 version = "0.8.0"
-source = "git+https://github.com/helius-labs/zolana?rev=ccb395d4b88d8542088a30f47a5d0d7158c3e3b7#ccb395d4b88d8542088a30f47a5d0d7158c3e3b7"
+source = "git+https://github.com/helius-labs/zolana?rev=1e2ab196252dd81fdfd7e315ee3cff51ccb5201d#1e2ab196252dd81fdfd7e315ee3cff51ccb5201d"
 dependencies = [
  "http",
  "reqwest",
@@ -5493,7 +5493,7 @@ dependencies = [
 [[package]]
 name = "spr-client"
 version = "0.8.0"
-source = "git+https://github.com/helius-labs/zolana?rev=ccb395d4b88d8542088a30f47a5d0d7158c3e3b7#ccb395d4b88d8542088a30f47a5d0d7158c3e3b7"
+source = "git+https://github.com/helius-labs/zolana?rev=1e2ab196252dd81fdfd7e315ee3cff51ccb5201d#1e2ab196252dd81fdfd7e315ee3cff51ccb5201d"
 dependencies = [
  "async-trait",
  "base64 0.22.1",
@@ -5546,7 +5546,7 @@ dependencies = [
 [[package]]
 name = "spr-event"
 version = "0.8.0"
-source = "git+https://github.com/helius-labs/zolana?rev=ccb395d4b88d8542088a30f47a5d0d7158c3e3b7#ccb395d4b88d8542088a30f47a5d0d7158c3e3b7"
+source = "git+https://github.com/helius-labs/zolana?rev=1e2ab196252dd81fdfd7e315ee3cff51ccb5201d#1e2ab196252dd81fdfd7e315ee3cff51ccb5201d"
 dependencies = [
  "borsh",
  "wincode",
@@ -5555,7 +5555,7 @@ dependencies = [
 [[package]]
 name = "spr-event-parser"
 version = "0.8.0"
-source = "git+https://github.com/helius-labs/zolana?rev=ccb395d4b88d8542088a30f47a5d0d7158c3e3b7#ccb395d4b88d8542088a30f47a5d0d7158c3e3b7"
+source = "git+https://github.com/helius-labs/zolana?rev=1e2ab196252dd81fdfd7e315ee3cff51ccb5201d#1e2ab196252dd81fdfd7e315ee3cff51ccb5201d"
 dependencies = [
  "borsh",
  "solana-pubkey 4.2.0",
@@ -5566,7 +5566,7 @@ dependencies = [
 [[package]]
 name = "spr-hasher"
 version = "0.8.0"
-source = "git+https://github.com/helius-labs/zolana?rev=ccb395d4b88d8542088a30f47a5d0d7158c3e3b7#ccb395d4b88d8542088a30f47a5d0d7158c3e3b7"
+source = "git+https://github.com/helius-labs/zolana?rev=1e2ab196252dd81fdfd7e315ee3cff51ccb5201d#1e2ab196252dd81fdfd7e315ee3cff51ccb5201d"
 dependencies = [
  "ark-bn254 0.6.0",
  "ark-ff 0.6.0",
@@ -5581,7 +5581,7 @@ dependencies = [
 [[package]]
 name = "spr-indexer-api"
 version = "0.8.0"
-source = "git+https://github.com/helius-labs/zolana?rev=ccb395d4b88d8542088a30f47a5d0d7158c3e3b7#ccb395d4b88d8542088a30f47a5d0d7158c3e3b7"
+source = "git+https://github.com/helius-labs/zolana?rev=1e2ab196252dd81fdfd7e315ee3cff51ccb5201d#1e2ab196252dd81fdfd7e315ee3cff51ccb5201d"
 dependencies = [
  "base64 0.22.1",
  "bs58",
@@ -5594,7 +5594,7 @@ dependencies = [
 [[package]]
 name = "spr-instruction"
 version = "0.8.0"
-source = "git+https://github.com/helius-labs/zolana?rev=ccb395d4b88d8542088a30f47a5d0d7158c3e3b7#ccb395d4b88d8542088a30f47a5d0d7158c3e3b7"
+source = "git+https://github.com/helius-labs/zolana?rev=1e2ab196252dd81fdfd7e315ee3cff51ccb5201d#1e2ab196252dd81fdfd7e315ee3cff51ccb5201d"
 dependencies = [
  "solana-address 2.6.1",
  "solana-instruction",
@@ -5608,7 +5608,7 @@ dependencies = [
 [[package]]
 name = "spr-interface"
 version = "0.8.0"
-source = "git+https://github.com/helius-labs/zolana?rev=ccb395d4b88d8542088a30f47a5d0d7158c3e3b7#ccb395d4b88d8542088a30f47a5d0d7158c3e3b7"
+source = "git+https://github.com/helius-labs/zolana?rev=1e2ab196252dd81fdfd7e315ee3cff51ccb5201d#1e2ab196252dd81fdfd7e315ee3cff51ccb5201d"
 dependencies = [
  "arrayvec",
  "borsh",
@@ -5627,7 +5627,7 @@ dependencies = [
 [[package]]
 name = "spr-keypair"
 version = "0.8.0"
-source = "git+https://github.com/helius-labs/zolana?rev=ccb395d4b88d8542088a30f47a5d0d7158c3e3b7#ccb395d4b88d8542088a30f47a5d0d7158c3e3b7"
+source = "git+https://github.com/helius-labs/zolana?rev=1e2ab196252dd81fdfd7e315ee3cff51ccb5201d#1e2ab196252dd81fdfd7e315ee3cff51ccb5201d"
 dependencies = [
  "aes",
  "bs58",
@@ -5696,7 +5696,7 @@ dependencies = [
 [[package]]
 name = "spr-program"
 version = "0.8.0"
-source = "git+https://github.com/helius-labs/zolana?rev=ccb395d4b88d8542088a30f47a5d0d7158c3e3b7#ccb395d4b88d8542088a30f47a5d0d7158c3e3b7"
+source = "git+https://github.com/helius-labs/zolana?rev=1e2ab196252dd81fdfd7e315ee3cff51ccb5201d#1e2ab196252dd81fdfd7e315ee3cff51ccb5201d"
 dependencies = [
  "solana-address 2.6.1",
  "spr-hasher",
@@ -5709,7 +5709,7 @@ dependencies = [
 [[package]]
 name = "spr-prover-tee"
 version = "0.8.0"
-source = "git+https://github.com/helius-labs/zolana?rev=ccb395d4b88d8542088a30f47a5d0d7158c3e3b7#ccb395d4b88d8542088a30f47a5d0d7158c3e3b7"
+source = "git+https://github.com/helius-labs/zolana?rev=1e2ab196252dd81fdfd7e315ee3cff51ccb5201d#1e2ab196252dd81fdfd7e315ee3cff51ccb5201d"
 dependencies = [
  "aes-gcm",
  "ciborium",
@@ -5733,7 +5733,7 @@ dependencies = [
 [[package]]
 name = "spr-transaction"
 version = "0.8.0"
-source = "git+https://github.com/helius-labs/zolana?rev=ccb395d4b88d8542088a30f47a5d0d7158c3e3b7#ccb395d4b88d8542088a30f47a5d0d7158c3e3b7"
+source = "git+https://github.com/helius-labs/zolana?rev=1e2ab196252dd81fdfd7e315ee3cff51ccb5201d#1e2ab196252dd81fdfd7e315ee3cff51ccb5201d"
 dependencies = [
  "borsh",
  "num-bigint",
@@ -5751,7 +5751,7 @@ dependencies = [
 [[package]]
 name = "spr-tree"
 version = "0.8.0"
-source = "git+https://github.com/helius-labs/zolana?rev=ccb395d4b88d8542088a30f47a5d0d7158c3e3b7#ccb395d4b88d8542088a30f47a5d0d7158c3e3b7"
+source = "git+https://github.com/helius-labs/zolana?rev=1e2ab196252dd81fdfd7e315ee3cff51ccb5201d#1e2ab196252dd81fdfd7e315ee3cff51ccb5201d"
 dependencies = [
  "borsh",
  "bytemuck",
@@ -5766,7 +5766,7 @@ dependencies = [
 [[package]]
 name = "spr-user-registry-interface"
 version = "0.8.0"
-source = "git+https://github.com/helius-labs/zolana?rev=ccb395d4b88d8542088a30f47a5d0d7158c3e3b7#ccb395d4b88d8542088a30f47a5d0d7158c3e3b7"
+source = "git+https://github.com/helius-labs/zolana?rev=1e2ab196252dd81fdfd7e315ee3cff51ccb5201d#1e2ab196252dd81fdfd7e315ee3cff51ccb5201d"
 dependencies = [
  "borsh",
  "solana-instruction",
@@ -7038,12 +7038,12 @@ checksum = "29666d0abbfad1e3dc4dcf6144730dd3a3ab225bbbdac83319345b1b44ccfc1b"
 [[package]]
 name = "zopro-bn254"
 version = "0.1.0"
-source = "git+https://github.com/helius-labs/zk-tools.git?rev=5f31da99c6ea5b014bf6d2ad8a2979a6da9d324c#5f31da99c6ea5b014bf6d2ad8a2979a6da9d324c"
+source = "git+https://github.com/helius-labs/zk-tools.git?rev=4e29011a5073cf0a56ac12c63f60e303a7b19fed#4e29011a5073cf0a56ac12c63f60e303a7b19fed"
 
 [[package]]
 name = "zopro-core"
 version = "0.1.0"
-source = "git+https://github.com/helius-labs/zk-tools.git?rev=5f31da99c6ea5b014bf6d2ad8a2979a6da9d324c#5f31da99c6ea5b014bf6d2ad8a2979a6da9d324c"
+source = "git+https://github.com/helius-labs/zk-tools.git?rev=4e29011a5073cf0a56ac12c63f60e303a7b19fed#4e29011a5073cf0a56ac12c63f60e303a7b19fed"
 dependencies = [
  "futures-channel",
  "getrandom 0.2.17",
@@ -7064,7 +7064,7 @@ dependencies = [
 [[package]]
 name = "zopro-metal"
 version = "0.1.0"
-source = "git+https://github.com/helius-labs/zk-tools.git?rev=5f31da99c6ea5b014bf6d2ad8a2979a6da9d324c#5f31da99c6ea5b014bf6d2ad8a2979a6da9d324c"
+source = "git+https://github.com/helius-labs/zk-tools.git?rev=4e29011a5073cf0a56ac12c63f60e303a7b19fed#4e29011a5073cf0a56ac12c63f60e303a7b19fed"
 dependencies = [
  "log",
  "metal",
@@ -7076,7 +7076,7 @@ dependencies = [
 [[package]]
 name = "zopro-prover"
 version = "0.1.0"
-source = "git+https://github.com/helius-labs/zk-tools.git?rev=5f31da99c6ea5b014bf6d2ad8a2979a6da9d324c#5f31da99c6ea5b014bf6d2ad8a2979a6da9d324c"
+source = "git+https://github.com/helius-labs/zk-tools.git?rev=4e29011a5073cf0a56ac12c63f60e303a7b19fed#4e29011a5073cf0a56ac12c63f60e303a7b19fed"
 dependencies = [
  "js-sys",
  "log",
@@ -7091,7 +7091,7 @@ dependencies = [
 [[package]]
 name = "zopro-spr"
 version = "0.1.0"
-source = "git+https://github.com/helius-labs/zk-tools.git?rev=5f31da99c6ea5b014bf6d2ad8a2979a6da9d324c#5f31da99c6ea5b014bf6d2ad8a2979a6da9d324c"
+source = "git+https://github.com/helius-labs/zk-tools.git?rev=4e29011a5073cf0a56ac12c63f60e303a7b19fed#4e29011a5073cf0a56ac12c63f60e303a7b19fed"
 dependencies = [
  "js-sys",
  "serde",
@@ -7104,7 +7104,7 @@ dependencies = [
 [[package]]
 name = "zopro-wgpu"
 version = "0.1.0"
-source = "git+https://github.com/helius-labs/zk-tools.git?rev=5f31da99c6ea5b014bf6d2ad8a2979a6da9d324c#5f31da99c6ea5b014bf6d2ad8a2979a6da9d324c"
+source = "git+https://github.com/helius-labs/zk-tools.git?rev=4e29011a5073cf0a56ac12c63f60e303a7b19fed#4e29011a5073cf0a56ac12c63f60e303a7b19fed"
 dependencies = [
  "futures-channel",
  "log",

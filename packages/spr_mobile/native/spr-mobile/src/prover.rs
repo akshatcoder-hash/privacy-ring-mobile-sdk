@@ -67,24 +67,13 @@ fn device_log() {
     });
 }
 
-/// A trusted key from the wallet's app-private key store.
-fn load_key(path: &std::path::Path) -> Result<zopro_spr::Prover, WalletError> {
+/// Load a trusted key through zopro's disk cache.
+pub(crate) fn load_key(path: &std::path::Path) -> Result<zopro_spr::Prover, WalletError> {
     device_log();
-    // SAFETY: the wallet store writes key parts separately and installs keys
-    // and images by rename. The app owns the configured key directory.
-    unsafe { zopro_spr::Prover::load_cached(path) }.map_err(|error| load_failed(path, &error))
-}
-
-/// Load a caller-supplied key through a private in-memory copy.
-pub(crate) fn load_file(path: &std::path::Path) -> Result<zopro_spr::Prover, WalletError> {
-    device_log();
-    let bytes = std::fs::read(path).map_err(|error| load_failed(path, &error))?;
-    zopro_spr::Prover::load(&bytes).map_err(|error| load_failed(path, &error))
-}
-
-fn load_failed(path: &std::path::Path, error: &dyn std::fmt::Display) -> WalletError {
-    log::warn!("zopro: {}: {error}", path.display());
-    WalletError::ProverLoadFailed
+    zopro_spr::Prover::load_cached(path).map_err(|error| {
+        log::warn!("zopro: {}: {error}", path.display());
+        WalletError::ProverLoadFailed
+    })
 }
 
 /// Why a proof on the device failed, carried through the client as
@@ -577,10 +566,9 @@ mod tests {
         }
     }
 
-    /// Downloads `transfer_confidential_2_2.key` into `ZOLANA_TEST_KEY_DIR`
-    /// (or a temp directory) unless it is already there and pinned.
+    /// Uses the pinned transfer key staged in `ZOLANA_TEST_KEY_DIR`.
     #[test]
-    #[ignore = "downloads a proving key"]
+    #[ignore = "needs the pinned transfer key in ZOLANA_TEST_KEY_DIR"]
     fn proves_a_client_request_with_the_pinned_key() {
         let prover = native_with_staged_keys();
         let sender = ShieldedKeypair::new_ed25519().unwrap();
@@ -591,6 +579,15 @@ mod tests {
         let failure = transfer.prove(&RequireTyped(&prover), &sender).unwrap_err();
         assert_eq!(WalletError::from(failure), WalletError::ProverBusy);
         standalone.close();
+
+        let image = image_path(&path);
+        let modified = std::fs::metadata(&image).unwrap().modified().unwrap();
+        let reopened = crate::LocalProver::load(path.display().to_string()).unwrap();
+        assert_eq!(
+            std::fs::metadata(&image).unwrap().modified().unwrap(),
+            modified
+        );
+        reopened.close();
 
         transfer
             .prove(&RequireTyped(&prover), &sender)
